@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            app:tabIndicatorFullWidth="true"
+            app:tabSelectedTextColor="#FFFFFF"
+            app:backgroundTint="@null"
+            android:background="@drawable/tab_shape_bg"
+            app:tabIndicator="@drawable/tab_full_indicator">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem1"
+                android:text="軌跡"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem2"
+                android:text="聊天"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem3"
+                android:text="主頁"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem4"
+                android:text="排行榜"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItem5"
+                android:text="我"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+        </com.google.android.material.tabs.TabLayout>
+
+</LinearLayout>
